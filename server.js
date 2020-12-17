@@ -14,15 +14,15 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Routes to send the user to the pages
-app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
-});
+// Points the server to a series of "route" files
+// These routes tell the server how to respond to users
 
-app.get("*", function (req, res) {
-    console.log(__dirname)
-    res.sendFile(path.join(__dirname, "/public/index.html"));
-});
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+
+
+
 
 
 // Starts the server
