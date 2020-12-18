@@ -10,7 +10,14 @@ module.exports = function (app) {
     });
 
 
-    app.post("/api/notes", function(req, res) {
+    app.post("/api/notes", function (req, res) {
+
+
+        if (notesData.length === 0){
+            req.body.id = 0
+        } else {
+            req.body.id = notesData.length
+        }
 
         notesData.push(req.body)
 
@@ -24,8 +31,17 @@ module.exports = function (app) {
 
         notes = JSON.stringify(notes)
         console.log(notes)
-        fs.writeFileSync('db/db.json', notes,err => {
+        fs.writeFileSync('db/db.json', notes, err => {
             if (err) throw err
         })
     }
+
+
+    app.delete("/api/notes/:id", function(req,res) {
+
+        console.log(req.params.id)
+
+
+
+    })
 }
