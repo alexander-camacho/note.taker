@@ -39,8 +39,13 @@ module.exports = function (app) {
 
     app.delete("/api/notes/:id", function(req,res) {
 
-        console.log(req.params.id)
-
+        for(var i = 0; i < notesData.length; i++){
+            if(notesData[i].id === parseInt(req.params.id)){
+                console.log(`Deleting: ${notesData[i].title}`)
+                notesData.splice(i,1)
+                updateDb(notesData)
+            }
+        }
 
 
     })
