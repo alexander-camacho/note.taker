@@ -21,19 +21,19 @@ This app is also deployed live to Heroku, try it out at the link below!
 
 After starting the app, the user will be able to view any saved notes, and write new notes. Text can be entered into the title and message fields, and will be saved when the save button is pressed on the top right of the app. The pencil button can also be used to clear the text fields.
 
-![Write Note Ex](/assets/writenote.jpg)
+![Write Note Ex](/assets/writenote.JPG)
 
 The title of the new note will show in the left-hand sidebar, when clicked the note will display again.
 
-![Saved Note Ex](/assets/savednote.jpg)
+![Saved Note Ex](/assets/savednote.JPG)
 
 An example of the note being shown again after being clicked on. The text will appear grey to represent a note being viewed. 
 
-![View Note Ex](/assets/viewnote.jpg)
+![View Note Ex](/assets/viewnote.JPG)
 
 Finally, if the trash can icon is clicked next to a note it will be deleted. In the example below the note titled "Test Title" was deleted.
 
-![Delete Note Ex](/assets/deletenote.jpg)
+![Delete Note Ex](/assets/deletenote.JPG)
 
 
 
