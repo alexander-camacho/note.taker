@@ -1,7 +1,5 @@
 # Note Taker
 
-
-
 ## Description
 This is an app that allows a user to read, write, save, and delete notes. The app uses express in the backend and writes the data to a JSON file.
 
@@ -16,7 +14,7 @@ Below is the text demo of this app with screenshots included.
 
 This app is also deployed live to Heroku, try it out at the link below!
 
-[Note Taker](https://enigmatic-citadel-39096.herokuapp.com/)
+[Live App!](https://enigmatic-citadel-39096.herokuapp.com/)
 
 
 After starting the app, the user will be able to view any saved notes, and write new notes. Text can be entered into the title and message fields, and will be saved when the save button is pressed on the top right of the app. The pencil button can also be used to clear the text fields.
